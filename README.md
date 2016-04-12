@@ -9,6 +9,7 @@ push(value)
 pop()
 peek()
 find()
+
 Additionally, the following errors must be raised:
 
 Throw a Stack Overflow error if you try push pasts it's capacity.
