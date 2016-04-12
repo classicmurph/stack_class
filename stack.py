@@ -42,7 +42,7 @@ class Stack:
         else:
             raise StackUnderflowError("Stack is empty!")
 
-    def len(self):
+    def length(self):
         return len(self.values)
 
     def peek(self):
@@ -54,4 +54,4 @@ class Stack:
     def find(self, value):
         while self.values[-1] != value:
             self.pop()
-        return self.values[-1]    
+        return self.values[-1]

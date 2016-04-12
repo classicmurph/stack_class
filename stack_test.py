@@ -40,7 +40,7 @@ def test_stack_can_return_length():
     stack = Stack(100)
     for _ in range(10):
         stack.push(random.randint)
-    assert stack.len() == 10
+    assert stack.length() == 10
 
 def test_peek_returns_stack_values():
     stack = Stack(100)
@@ -58,3 +58,4 @@ def test_find_returns_correct_value():
     stack.push('five')
     stack.push([])
     assert stack.find('five') == 'five'
+    assert stack.length() == 2
